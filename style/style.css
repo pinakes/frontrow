@@ -1,0 +1,28 @@
+.env {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(../assets/girls-profile-zoomout.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100vw;
+    color: white;
+}
+
+.title h1 {
+    display: block;
+    width: 206px;
+    height: 150px;
+    overflow: hidden;
+    text-indent: -900px;
+    background: url(../assets/frontrow-logo.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}

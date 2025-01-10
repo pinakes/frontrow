@@ -21,8 +21,8 @@ body, html {
 
 .title h1 {
     display: block;
-    width: 206px;
-    height: 150px;
+    width: 142px;
+    height: 104px;
     overflow: hidden;
     text-indent: -900px;
     background: url(../assets/frontrow-logo.png) no-repeat;

@@ -1,5 +1,5 @@
 /* Import Archivo from Google Fonts as fallback */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;700&display=swap');
 
 /* Archivo SemiExpanded Bold - requires local font files */
 @font-face {
@@ -30,14 +30,15 @@
 
 body, html {
     background-color: #0C0E0D;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo Variable','Archivo', sans-serif;
+    font-weight: 100;
+    font-stretch: 75%;
 }
 p {
     color: white;
 }
 h3 {
     font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
-    font-weight: 700;
     color: white;
     font-size: 48px;
     font-weight: 900;
@@ -208,4 +209,185 @@ strong {
     width: 162px;
     border-left: 0.5px solid #ffffff;
     padding: 20px;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* iPad and Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .title h2 {
+        font-size: 80px;
+    }
+    .solution-content-row {
+        column-gap: 60px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .solution-number {
+        font-size: 80px;
+    }
+    
+    .solution-img {
+        position: absolute;
+        width: 150px;
+        z-index: 1;
+        opacity: 45%;
+    }
+    
+    .solution-img-one, .solution-img-three {
+        right: -10px;
+    }
+    
+    .solution-img-two {
+        left: -10px;
+    }
+}
+
+/* Mobile (up to 768px) */
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 32px;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
+    .env {
+        background-size: 120vh;;
+    }
+    .section-content p {
+        font-size: 18px;
+    }
+    
+    .title h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    
+    .title {
+        bottom: 20%;
+        padding: 0 20px;
+    }
+    
+    .gradient {
+        height: 300px;
+    }
+    
+    .section {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .mission {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .mission-content {
+        width: 100%;
+    }
+    
+    .what {
+        margin-top: 100px;
+    }
+    
+    .what-content-text {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .what-content-text img {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .problem {
+        height: 600px;
+        background-size: 800px;
+    }
+    
+    .problem .section {
+        width: 100%;
+        padding-top: 250px;
+    }
+    
+    .solution-content-row {
+        flex-direction: column;
+        align-items: flex-start;
+        column-gap: 0;
+        gap: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .solution-number {
+        font-size: 60px;
+    }
+    
+    .solution-text {
+        font-size: 18px;
+    }
+    
+    .solution-row {
+        padding-bottom: 40px;
+    }
+    
+    .solution-img {
+        position: absolute;
+        width: 180px;
+    }
+    
+    .solution-img-one,
+    .solution-img-two,
+    .solution-img-three {
+        z-index: 1;
+        opacity: 40%;
+    }
+    .solution-img-one,
+    .solution-img-three {
+        right: -20px;
+    }
+    .solution-img-two {
+        left: -20px;
+    }
+    
+    
+    .contact {
+        margin-top: 100px;
+    }
+    
+    .contact-text {
+        font-size: 18px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 0;
+    }
+    
+    .footer-logo {
+        margin: 20px;
+    }
+    
+    .colophon {
+        border-left: none;
+        border-top: 0.5px solid #ffffff;
+        padding: 20px;
+    }
+    
+    .colophon p {
+        font-size: 14px;
+    }
+    
+    .socials {
+        width: 100%;
+        border-left: none;
+        border-top: 0.5px solid #ffffff;
+        padding: 20px;
+    }
 }

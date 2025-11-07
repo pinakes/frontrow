@@ -266,13 +266,10 @@ strong {
         font-size: 40px;
         line-height: 1.2;
     }
-
-    
     .title {
-        bottom: 20%;
+        bottom: 32%;
         padding: 0 20px;
     }
-    
     .gradient {
         height: 300px;
     }

@@ -1,25 +1,84 @@
+/* Import Archivo from Google Fonts as fallback */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+/* Archivo SemiExpanded Bold - requires local font files */
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ArchivoSemiExpanded-Bold.woff2') format('woff2'),
+         url('../fonts/ArchivoSemiExpanded-Bold.woff') format('woff'),
+         url('../fonts/ArchivoSemiExpanded-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* Alternative: Use variable font if available */
+@font-face {
+    font-family: 'Archivo Variable';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 50% 200%;
+    src: url('../fonts/Archivo-VariableFont_wdth,wght.woff2') format('woff2-variations');
+    font-display: swap;
+}
+
+/* Usage examples:
+ * - For SemiExpanded Bold: font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif; font-weight: 700;
+ * - For Variable font with SemiExpanded Bold: font-family: 'Archivo Variable', 'Archivo', sans-serif; 
+ *   font-weight: 700; font-stretch: 75%;
+ */
+
 body, html {
-    background-color: #0a0d0e;
+    background-color: #0C0E0D;
+    font-family: 'Archivo', sans-serif;
+}
+p {
+    color: white;
+}
+h3 {
+    font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+}
+h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-content p{
+    font-size: 24px;
+}
+hr {
+    border: 1px solid #ffffff;
+    width: 100%;
+    margin: 20px 0;
 }
 .env {
     display: table;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     position: relative;
     overflow: hidden;
     background: url(../assets/girls-profile-zoomout.jpg) no-repeat center;
     background-size: cover;
 }
-
-.title {
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+.logo {
     position: absolute;
-    bottom: 18%;
+    top: 24px;
     text-align: center;
     width: 100vw;
     color: white;
 }
 
-.title h1 {
+.logo h1 {
     display: block;
     width: 142px;
     height: 104px;
@@ -28,4 +87,66 @@ body, html {
     background: url(../assets/frontrow-logo.png) no-repeat;
     background-size: cover;
     margin: 0 auto;
+}
+.title {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    bottom: 25%;
+}
+.title h2 {
+    font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+strong {
+    font-weight: 700;
+    color: #CCFF00;
+}
+.gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(to bottom, hsla(150, 8%, 5%, 0), hsl(150, 8%, 5%));
+}
+.section {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.mission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.mission-content {
+    width: 500px;
+}
+.what {
+    margin-top: 200px;
+}
+.what-content-text {
+    display: flex;
+    gap: 20px;
+}
+.what-content-text img {
+    width: 350px;
+    height: auto;
+}
+.problem {
+    height: 1000px;
+    width: 100%;
+    background: url(../assets/visual-problem.png) no-repeat top center ;
+    background-size: 1400px;
+}
+.problem .section {
+    width: 600px;
+    padding-top: 450px;
+    text-align: center;
 }

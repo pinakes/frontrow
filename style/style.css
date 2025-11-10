@@ -1,7 +1,7 @@
 /* Import Archivo from Google Fonts as fallback */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Archivo SemiExpanded Bold - requires local font files */
+/* Archivo SemiExpanded Bold - requires local font files 
 @font-face {
     font-family: 'Archivo SemiExpanded';
     font-style: normal;
@@ -12,7 +12,7 @@
     font-display: swap;
 }
 
-/* Alternative: Use variable font if available */
+/* Alternative: Use variable font if available 
 @font-face {
     font-family: 'Archivo Variable';
     font-style: normal;
@@ -30,15 +30,16 @@
 
 body, html {
     background-color: #0C0E0D;
-    font-family: 'Archivo Variable','Archivo', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 100;
     font-stretch: 75%;
+    color: #ffffff;
 }
 p {
     color: white;
 }
 h3 {
-    font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
+    font-family: 'Archivo Black', 'Archivo', sans-serif;
     color: white;
     font-size: 48px;
     font-weight: 900;
@@ -96,7 +97,7 @@ hr {
     bottom: 25%;
 }
 .title h2 {
-    font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
+    font-family: 'Archivo Black', 'Archivo', sans-serif;
     font-weight: 700;
     font-size: 90px;
     color: white;
@@ -152,7 +153,7 @@ strong {
     text-align: center;
 }
 .solution-number {
-    font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
+    font-family: 'Archivo Black', 'Archivo', sans-serif;
     font-weight: 100;
     font-size: 100px;
 }
@@ -199,7 +200,7 @@ strong {
     flex: 1;
     padding: 20px;
     border-left: 0.5px solid #ffffff;
-    font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 100;
 }
 .colophon p {
@@ -209,6 +210,36 @@ strong {
     width: 162px;
     border-left: 0.5px solid #ffffff;
     padding: 20px;
+}
+#mc_embed_signup {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-stretch: 75%;
+    color: #ffffff;
+}
+.mc-field-group {
+    display: flex;
+    flex-direction: column;
+}
+#mce-EMAIL {
+    background: #0c0e0d;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    line-height: 2rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding: 12px;
+}
+#mc-embedded-subscribe {
+    border-radius: 6px;
+    border: none;
+    line-height: 2rem;
+    padding: 12px;
+    width: 200px;
+    margin: 18px 0 6px 0;
+    font-family: 'Archivo Black';
+    font-size: 1.2rem;
 }
 
 /* ============================================
@@ -360,7 +391,6 @@ strong {
     .contact-text {
         font-size: 18px;
     }
-    
     .footer {
         flex-direction: column;
         margin-top: 100px;
@@ -386,5 +416,8 @@ strong {
         border-left: none;
         border-top: 0.5px solid #ffffff;
         padding: 20px;
+    }
+    #mc-embedded-subscribe {
+        width: 100%;
     }
 }

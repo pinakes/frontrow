@@ -1,18 +1,7 @@
 /* Import Archivo from Google Fonts as fallback */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;700;900&display=swap');
 
-/* Archivo SemiExpanded Bold - requires local font files 
-@font-face {
-    font-family: 'Archivo SemiExpanded';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/ArchivoSemiExpanded-Bold.woff2') format('woff2'),
-         url('../fonts/ArchivoSemiExpanded-Bold.woff') format('woff'),
-         url('../fonts/ArchivoSemiExpanded-Bold.ttf') format('truetype');
-    font-display: swap;
-}
-
-/* Alternative: Use variable font if available 
+/* Archivo Variable Font - Backup fallback using local WOFF2 */
 @font-face {
     font-family: 'Archivo Variable';
     font-style: normal;
@@ -22,27 +11,93 @@
     font-display: swap;
 }
 
-/* Usage examples:
- * - For SemiExpanded Bold: font-family: 'Archivo SemiExpanded', 'Archivo', sans-serif; font-weight: 700;
- * - For Variable font with SemiExpanded Bold: font-family: 'Archivo Variable', 'Archivo', sans-serif; 
- *   font-weight: 700; font-stretch: 75%;
- */
+/* Archivo SemiExpanded - All weights using local font files */
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/ArchivoSemiExpanded-Thin.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/ArchivoSemiExpanded-ExtraLight.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/ArchivoSemiExpanded-Light.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ArchivoSemiExpanded-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/ArchivoSemiExpanded-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/ArchivoSemiExpanded-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ArchivoSemiExpanded-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/ArchivoSemiExpanded-ExtraBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/ArchivoSemiExpanded-Black.ttf') format('truetype');
+    font-display: swap;
+}
 
 body, html {
     background-color: #0C0E0D;
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
-    font-stretch: 75%;
     color: #ffffff;
 }
 p {
     color: white;
 }
 h3 {
-    font-family: 'Archivo Black', 'Archivo', sans-serif;
+    font-family: 'Archivo SemiExpanded', 'Archivo Variable', 'Archivo', sans-serif;
     color: white;
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 800;
 }
 h4 {
     color: white;
@@ -58,6 +113,11 @@ hr {
     border: 0.5px solid #ffffff;
     width: 100%;
     margin: 20px 0;
+}
+small {
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.8rem;
+    opacity: .5;
 }
 .env {
     display: table;
@@ -97,8 +157,8 @@ hr {
     bottom: 25%;
 }
 .title h2 {
-    font-family: 'Archivo Black', 'Archivo', sans-serif;
-    font-weight: 700;
+    font-family: 'Archivo SemiExpanded', 'Archivo Variable', 'Archivo', sans-serif;
+    font-weight: 600;
     font-size: 90px;
     color: white;
     text-align: center;
@@ -153,7 +213,7 @@ strong {
     text-align: center;
 }
 .solution-number {
-    font-family: 'Archivo Black', 'Archivo', sans-serif;
+    font-family: 'Archivo SemiExpanded', 'Archivo Variable', 'Archivo', sans-serif;
     font-weight: 100;
     font-size: 100px;
 }
@@ -200,7 +260,7 @@ strong {
     flex: 1;
     padding: 20px;
     border-left: 0.5px solid #ffffff;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo SemiExpanded', 'Archivo Variable', 'Archivo', sans-serif;
     font-weight: 100;
 }
 .colophon p {
@@ -217,6 +277,12 @@ strong {
     font-stretch: 75%;
     color: #ffffff;
 }
+#mc_embed_signup .mc-field-group {
+    width: 100%;
+}
+#mc_embed_signup form {
+    margin: 0;
+}
 .mc-field-group {
     display: flex;
     flex-direction: column;
@@ -230,16 +296,21 @@ strong {
     font-size: 1.1rem;
     font-weight: 100;
     padding: 12px;
+    height: 58px;
 }
-#mc-embedded-subscribe {
+#mc_embed_signup .button {
+    color: #0C0E0D;
+    background: #ffffff;
     border-radius: 6px;
     border: none;
     line-height: 2rem;
     padding: 12px;
     width: 200px;
     margin: 18px 0 6px 0;
-    font-family: 'Archivo Black';
+    font-family: 'Archivo SemiExpanded', 'Archivo Variable', 'Archivo', sans-serif;
+    font-weight: 700;
     font-size: 1.2rem;
+    height: 58px;
 }
 
 /* ============================================
@@ -417,7 +488,7 @@ strong {
         border-top: 0.5px solid #ffffff;
         padding: 20px;
     }
-    #mc-embedded-subscribe {
+    #mc_embed_signup .button {
         width: 100%;
     }
 }

@@ -312,6 +312,10 @@ strong {
     font-size: 1.2rem;
     height: 58px;
 }
+#mce-responses {
+    padding: 0;
+    margin: 0;
+}
 
 /* ============================================
    RESPONSIVE BREAKPOINTS
